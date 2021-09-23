@@ -1,2 +1,3 @@
-# chaingraph-eosio-mappings
+# ChainGraph EOSIO Mappings
+
 Temporary repository for EOSIO contract mappings
