@@ -1,6 +1,6 @@
 {
   "chain": "eos",
-  "contract": "bitcashtokens",
+  "contract": "bitcashtokns",
   "type": "standard_token",
   "actions": "*",
   "tables": [
