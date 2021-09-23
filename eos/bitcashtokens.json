@@ -1,7 +1,0 @@
-{
-  "chain": "eos",
-  "contract": "bitcashtokens",
-  "type": "standard_token",
-  "actions": "*",
-  "tables": "*"
-}

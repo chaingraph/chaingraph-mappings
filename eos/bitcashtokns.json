@@ -1,0 +1,18 @@
+{
+  "chain": "eos",
+  "contract": "bitcashtokens",
+  "type": "standard_token",
+  "actions": "*",
+  "tables": [
+    {
+      "table": "stat",
+      "primary_key": "supply",
+      "computed_key_type": "asset_symbol"
+    },
+    {
+      "table": "accounts",
+      "primary_key": "balance",
+      "computed_key_type": "asset_symbol"
+    }
+  ]
+}
