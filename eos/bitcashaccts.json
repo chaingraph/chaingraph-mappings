@@ -1,0 +1,11 @@
+{
+  "chain": "eos",
+  "contract": "bitcashaccts",
+  "actions": "*",
+  "tables": [
+    {
+      "table": "accounts",
+      "table_key": "name"
+    }
+  ]
+}

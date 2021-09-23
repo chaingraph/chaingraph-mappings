@@ -1,0 +1,10 @@
+{
+  "chain": "eos",
+  "contact": "delphioracle",
+  "tables": [
+    {
+      "table": "datapoints",
+      "table_key": "id"
+    }
+  ]
+}
