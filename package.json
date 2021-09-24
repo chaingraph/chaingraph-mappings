@@ -1,0 +1,41 @@
+{
+  "name": "chaingraph-eosio-mappings",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:chaingraph/chaingraph-eosio-mappings.git",
+  "author": "blockmatic.io",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "whitelist": "env-cmd ts-node ./scripts/whitelist",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\""
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@blockmatic/eslint-config": "^2.0.0",
+    "@blockmatic/prettier-config": "^2.0.0",
+    "@types/node": "^16.9.6",
+    "eslint": "^7.32.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "env-cmd": "^10.1.0",
+    "env-var": "^7.0.1",
+    "pg-promise": "^10.11.0",
+    "tslog": "^3.2.2"
+  }
+}
