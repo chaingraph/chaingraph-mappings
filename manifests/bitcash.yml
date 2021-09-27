@@ -1,0 +1,34 @@
+          where:
+            _or:
+              - from:
+                  _in:
+                    - bitcashbank
+                    - hedgerbitcash
+              - to:
+                  _in:
+                    - bitcashbank
+                    - hedgerbitcash
+    tables:
+      - table: stat
+        scopes:
+          - '*'
+      - table: accounts
+        scopes:
+          - '*'
+  - chain: eos
+    contract: eosio.token
+    start_block: 207041730
+    actions:
+      - transfer:
+          where:
+            _or:
+              - from:
+                  _in:
+                    - bitcashbank
+                    - hedgerbitcash
+              - to:
+                  _in:
+                    - bitcashbank
+                    - hedgerbitcash
+    tables:
+      - '*'
