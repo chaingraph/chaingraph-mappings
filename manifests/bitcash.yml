@@ -1,3 +1,13 @@
+app_name: bitcash
+app_id: b15230ac-9fc0-41ee-9669-af889d609338
+description: Bitcash Bank
+url: 'https://bitcash.org'
+whitelist:
+  - chain: jungle
+    contract: eosio.token
+    start_block: 100939520
+    actions:
+      - transfer:
           where:
             _or:
               - from:
