@@ -7,17 +7,17 @@ whitelist:
     contract: eosio.token
     start_block: 100939520
     actions:
-      - transfer:
-          where:
-            _or:
-              - from:
-                  _in:
-                    - bitcashbank
-                    - hedgerbitcash
-              - to:
-                  _in:
-                    - bitcashbank
-                    - hedgerbitcash
+      - action: transfer
+        where:
+          _or:
+            - from:
+                _in:
+                  - bitcashbank
+                  - hedgerbitcash
+            - to:
+                _in:
+                  - bitcashbank
+                  - hedgerbitcash
     tables:
       - table: stat
         scopes:
@@ -29,16 +29,16 @@ whitelist:
     contract: eosio.token
     start_block: 207041730
     actions:
-      - transfer:
-          where:
-            _or:
-              - from:
-                  _in:
-                    - bitcashbank
-                    - hedgerbitcash
-              - to:
-                  _in:
-                    - bitcashbank
-                    - hedgerbitcash
+      - action: transfer
+        where:
+          _or:
+            - from:
+                _in:
+                  - bitcashbank
+                  - hedgerbitcash
+            - to:
+                _in:
+                  - bitcashbank
+                  - hedgerbitcash
     tables:
       - '*'
