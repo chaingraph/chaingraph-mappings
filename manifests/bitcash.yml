@@ -4,6 +4,13 @@ description: Bitcash Bank
 url: 'https://bitcash.org'
 whitelist:
   - chain: jungle
+    contract: bitcashbank
+    start_block: 100939520
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: jungle
     contract: bitcashaccts
     start_block: 100939520
     actions:
