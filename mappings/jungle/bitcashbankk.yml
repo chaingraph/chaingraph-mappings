@@ -1,0 +1,29 @@
+chain: jungle
+contract: bitcashbankk
+tables:
+  - table: config
+    table_type: singleton
+  - table: cryptotokens
+    table_key: id
+  - table: glbpairloan
+    table_key: pair_id
+  - table: glbtotalloan
+    table_key: id
+  - table: ltvdaily
+    table_key: id
+  - table: ltvhourly
+    table_key: id
+  - table: ltvlevels
+    table_key: level
+  - table: p2porders
+    table_key: id
+  - table: pairs
+    table_key: id
+  - table: spot
+    table_key: pair_id
+  - table: margin
+    table_key: pair_id
+  - table: stable
+    table_key: id
+  - table: stabletokens
+    table_key: id

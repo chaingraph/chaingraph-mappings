@@ -1,0 +1,10 @@
+chain: jungle
+contract: bitcashmocks
+type: standard_token
+tables:
+  - table: stat
+    primary_key: supply
+    computed_key_type: asset_symbol
+  - table: accounts
+    primary_key: balance
+    computed_key_type: asset_symbol
