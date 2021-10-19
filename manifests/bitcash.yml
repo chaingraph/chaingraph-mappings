@@ -11,6 +11,20 @@ whitelist:
     tables:
       - '*'
   - chain: jungle
+    contract: bitcashmocks
+    start_block: 100939520
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: jungle
+    contract: bitcashtoken
+    start_block: 100939520
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: jungle
     contract: bitcashaccts
     start_block: 100939520
     actions:
