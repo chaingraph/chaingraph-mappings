@@ -8,7 +8,7 @@ export interface ChainGraphTableMappings {
   scopes?: string[]
   table: string
   table_type?: 'singleton' | 'multi_index'
-  primary_key: string
+  table_key: string
   computed_key_type?: 'asset_symbol' | 'symbol'
 }
 

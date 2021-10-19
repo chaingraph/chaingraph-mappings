@@ -3,8 +3,8 @@ contract: bitcashtokns
 type: standard_token
 tables:
   - table: stat
-    primary_key: supply
+    table_key: supply
     computed_key_type: asset_symbol
   - table: accounts
-    primary_key: balance
+    table_key: balance
     computed_key_type: asset_symbol
