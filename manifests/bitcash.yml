@@ -32,6 +32,12 @@ whitelist:
     tables:
       - '*'
   - chain: jungle
+    contract: delphioracle
+    start_block: 100939520
+    actions: []
+    tables:
+      - datapoints
+  - chain: jungle
     contract: eosio.token
     start_block: 100939520
     actions:
