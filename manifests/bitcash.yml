@@ -36,7 +36,9 @@ whitelist:
     start_block: 100939520
     actions: []
     tables:
-      - datapoints
+      - table: datapoints
+        scopes:
+          - '*'
   - chain: jungle
     contract: eosio.token
     start_block: 100939520
