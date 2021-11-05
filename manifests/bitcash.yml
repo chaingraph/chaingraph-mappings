@@ -4,7 +4,7 @@ description: Bitcash Bank
 url: 'https://bitcash.org'
 whitelist:
   - chain: jungle
-    contract: bitcashbankk
+    contract: bitcashbank2
     start_block: 100939520
     actions:
       - '*'
@@ -18,7 +18,7 @@ whitelist:
     tables:
       - '*'
   - chain: jungle
-    contract: bitcashtoken
+    contract: bitcashtokn2
     start_block: 100939520
     actions:
       - '*'
@@ -48,11 +48,11 @@ whitelist:
           _or:
             - from:
                 _in:
-                  - bitcashbankk
+                  - bitcashbank2
                   - hedgerbitcash
             - to:
                 _in:
-                  - bitcashbankk
+                  - bitcashbank2
                   - hedgerbitcash
     tables:
       - table: stat
@@ -70,11 +70,11 @@ whitelist:
           _or:
             - from:
                 _in:
-                  - bitcashbankk
+                  - bitcashbank2
                   - hedgerbitcash
             - to:
                 _in:
-                  - bitcashbankk
+                  - bitcashbank2
                   - hedgerbitcash
     tables:
       - '*'
