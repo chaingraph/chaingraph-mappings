@@ -1,5 +1,5 @@
 chain: jungle
-contract: bitcashbankk
+contract: bitcashbank2
 tables:
   - table: config
     table_type: singleton
