@@ -1,5 +1,5 @@
 chain: eos
-contract: bitcashtokns
+contract: eosio.token
 type: standard_token
 tables:
   - table: stat

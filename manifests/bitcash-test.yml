@@ -32,13 +32,6 @@ whitelist:
     tables:
       - '*'
   - chain: eos
-    contract: bkbhedgetest
-    start_block: 217399194
-    actions:
-      - '*'
-    tables:
-      - '*'
-  - chain: eos
     contract: eosio.token
     start_block: 217399194
     actions:
