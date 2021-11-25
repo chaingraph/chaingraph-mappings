@@ -1,0 +1,62 @@
+app_name: bitcash_test
+app_id: b33330ac-9fc0-41ee-9669-af889d609399
+description: Bitcash Bank Test
+url: 'https://bitcash.org'
+whitelist:
+  - chain: eos
+    contract: bkbbanktest1
+    start_block: 217399194
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: eos
+    contract: bkbmocktoken
+    start_block: 217399194
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: eos
+    contract: bkbtokentest
+    start_block: 217399194
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: eos
+    contract: bkbaccountst
+    start_block: 217399194
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: eos
+    contract: bkbhedgetest
+    start_block: 217399194
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: eos
+    contract: eosio.token
+    start_block: 217399194
+    actions:
+      - action: transfer
+        where:
+          _or:
+            - from:
+                _in:
+                  - bkbbanktest1
+                  - bkbhedgetest
+            - to:
+                _in:
+                  - bkbbanktest1
+                  - bkbhedgetest
+    tables:
+      - table: stat
+        scopes:
+          - '*'
+      - table: accounts
+        scopes:
+          - '*'
