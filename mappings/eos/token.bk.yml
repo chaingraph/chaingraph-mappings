@@ -1,0 +1,10 @@
+chain: eos
+contract: token.bk
+type: standard_token
+tables:
+  - table: stat
+    table_key: supply
+    computed_key_type: asset_symbol
+  - table: accounts
+    table_key: balance
+    computed_key_type: asset_symbol

@@ -1,0 +1,80 @@
+app_name: bitcash_jungle
+app_id: b15230ac-9fc0-41ee-9669-af889d609388
+description: Bitcash Bank
+url: 'https://bitcash.org'
+whitelist:
+  - chain: jungle
+    contract: bitcashbank2
+    start_block: 100939520
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: jungle
+    contract: bitcashmocks
+    start_block: 100939520
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: jungle
+    contract: bitcashtokn2
+    start_block: 100939520
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: jungle
+    contract: bitcashaccts
+    start_block: 100939520
+    actions:
+      - '*'
+    tables:
+      - '*'
+  - chain: jungle
+    contract: delphioracle
+    start_block: 100939520
+    actions: []
+    tables:
+      - table: datapoints
+        scopes:
+          - '*'
+  - chain: jungle
+    contract: eosio.token
+    start_block: 100939520
+    actions:
+      - action: transfer
+        where:
+          _or:
+            - from:
+                _in:
+                  - bitcashbank2
+                  - hedgerbitcash
+            - to:
+                _in:
+                  - bitcashbank2
+                  - hedgerbitcash
+    tables:
+      - table: stat
+        scopes:
+          - '*'
+      - table: accounts
+        scopes:
+          - '*'
+  - chain: eos
+    contract: eosio.token
+    start_block: 207041730
+    actions:
+      - action: transfer
+        where:
+          _or:
+            - from:
+                _in:
+                  - bitcashbank2
+                  - hedgerbitcash
+            - to:
+                _in:
+                  - bitcashbank2
+                  - hedgerbitcash
+    tables:
+      - '*'
