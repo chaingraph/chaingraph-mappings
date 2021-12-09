@@ -25,12 +25,6 @@ whitelist:
     tables:
       - '*'
   - chain: eos
-    contract: tethertether
-    start_block: 219468569
-    actions:
-      - 'transfer'
-    tables: []
-  - chain: eos
     contract: delphioracle
     start_block: 219468569
     actions: []
@@ -38,9 +32,3 @@ whitelist:
       - table: datapoints
         scopes:
           - '*'
-  - chain: eos
-    contract: eosio.token
-    start_block: 219468569
-    actions:
-      - 'transfer'
-    tables: []
