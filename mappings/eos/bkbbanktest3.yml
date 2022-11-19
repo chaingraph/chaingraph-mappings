@@ -19,7 +19,7 @@ tables:
     table_key: level
   - table: p2porders
     table_key: id
-  - table: stablepairsv2
+  - table: spotpairsv2
     table_key: id
   - table: spotv2
     table_key: pair_id
