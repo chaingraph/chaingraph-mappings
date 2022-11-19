@@ -4,7 +4,7 @@ description: Bitcash Bank Test
 url: 'https://bitcash.org'
 whitelist:
   - chain: eos
-    contract: bkbbanktest1
+    contract: bkbbanktest3
     start_block: 217399194
     actions:
       - '*'

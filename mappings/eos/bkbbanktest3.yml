@@ -1,0 +1,35 @@
+chain: eos
+contract: bkbbanktest3
+tables:
+  - table: config
+    table_type: singleton
+  - table: cryptotokens
+    table_key: id
+  - table: glbpairloan
+    table_key: pair_id
+  - table: glbtotalloan
+    table_key: id
+  - table: glbttlcollv2
+    table_key: id
+  - table: ltvdaily
+    table_key: id
+  - table: ltvhourly
+    table_key: id
+  - table: ltvlevels
+    table_key: level
+  - table: p2porders
+    table_key: id
+  - table: stablepairsv2
+    table_key: id
+  - table: spotv2
+    table_key: pair_id
+  - table: marginv2
+    table_key: pair_id
+  - table: stablev2
+    table_key: id
+  - table: stbltokensv2
+    table_key: id
+  - table: forexpairs
+    table_key: id
+  - table: limits
+    table_key: id
