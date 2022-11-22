@@ -33,3 +33,5 @@ tables:
     table_key: id
   - table: limits
     table_key: id
+  - table: glbttlloanv2
+    table_key: id
