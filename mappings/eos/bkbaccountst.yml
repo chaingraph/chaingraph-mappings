@@ -1,5 +1,5 @@
 chain: eos
 contract: bkbaccountst
 tables:
-  - table: accounts
+  - table: accountsv2
     table_key: name
