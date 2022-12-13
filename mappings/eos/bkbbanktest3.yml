@@ -26,7 +26,8 @@ tables:
   - table: marginv2
     table_key: pair_id
   - table: stablev2
-    table_key: id
+    table_key: balance
+    computed_key_type: asset_symbol
   - table: stbltokensv2
     table_key: id
   - table: forexpairs
