@@ -33,7 +33,11 @@ tables:
   - table: forexpairs
     table_key: id
   - table: limits
-    table_key: id
+    table_key: max_range
+    computed_key_type: extended_asset_symbol
+    computed_fields:
+      - max_range
+      - _row_index
   - table: glbttlloanv2
     table_key: id
   - table: wdlperiods
