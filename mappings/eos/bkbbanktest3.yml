@@ -10,7 +10,8 @@ tables:
   - table: glbtotalloan
     table_key: id
   - table: glbttlcollv2
-    table_key: id
+    table_key: total
+    computed_key_type: extended_asset_symbol
   - table: ltvdaily
     table_key: id
   - table: ltvhourly
@@ -29,8 +30,18 @@ tables:
     table_key: balance
     computed_key_type: extended_asset_symbol
   - table: stbltokensv2
-    table_key: id
+    table_key: total
+    computed_key_type: extended_asset_symbol
   - table: forexpairs
+    table_key: id
+  - table: glbttlloanv2
+    table_key: total
+    computed_key_type: extended_asset_symbol
+  - table: wdlperiods
+    table_key: account
+  - table: buygemsords
+    table_key: id
+  - table: sellgemsords
     table_key: id
   - table: limits
     table_key: max_range
@@ -38,7 +49,3 @@ tables:
     computed_fields:
       - max_range
       - _row_index
-  - table: glbttlloanv2
-    table_key: id
-  - table: wdlperiods
-    table_key: account
