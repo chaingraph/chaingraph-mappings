@@ -9,6 +9,9 @@ tables:
     table_key: pair_id
   - table: glbtotalloan
     table_key: id
+  - table: glbttlcollv2
+    table_key: total
+    computed_key_type: extended_asset_symbol
   - table: ltvdaily
     table_key: id
   - table: ltvhourly
@@ -17,17 +20,32 @@ tables:
     table_key: level
   - table: p2porders
     table_key: id
-  - table: pairs
+  - table: spotpairsv2
     table_key: id
-  - table: spot
+  - table: spotv2
     table_key: pair_id
-  - table: margin
+  - table: marginv2
     table_key: pair_id
-  - table: stable
+  - table: stablev2
+    table_key: balance
+    computed_key_type: extended_asset_symbol
+  - table: stbltokensv2
+    table_key: total
+    computed_key_type: extended_asset_symbol
+  - table: forexpairs
     table_key: id
-  - table: stabletokens
-    table_key: id
+  - table: glbttlloanv2
+    table_key: total
+    computed_key_type: extended_asset_symbol
+  - table: wdlperiods
+    table_key: account
   - table: buygemsords
     table_key: id
   - table: sellgemsords
     table_key: id
+  - table: limits
+    table_key: max_range
+    computed_key_type: extended_asset_symbol
+    computed_fields:
+      - max_range
+      - _row_index
