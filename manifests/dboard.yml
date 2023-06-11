@@ -1,7 +1,7 @@
 app_name: dboard
-app_id: b15230ac-9fc0-41ee-9669-af889d609338
-description: https://bitcash-dboard.vercel.app
-url: 'https://bitcash.org'
+app_id: b15230ac-9fc0-41ee-9669-af889d609331
+description: Dboard
+url: 'https://bitcash-dboard.vercel.app'
 whitelist:
   - chain: eos
     contract: testproposal

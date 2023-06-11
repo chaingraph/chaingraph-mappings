@@ -5,7 +5,3 @@ tables:
     table_key: referendum_id
   - table: votes
     table_key: voter
-    computed_key_type: extended_asset_symbol
-    computed_fields:
-      - voter
-      - weight
