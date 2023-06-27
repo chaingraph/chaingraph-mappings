@@ -10,3 +10,11 @@ Temporary repository for EOSIO contract mappings
 
 1. set a contract mappings `yarn mappings eos bkbbanktest3`
 2. set an app manifest `yarn manifest bitcash_test`
+
+### Contract mappings
+
+```sh
+yarn mappings eos testproposal
+yarn mappings eos testrefendum
+yarn manifest dboard
+```

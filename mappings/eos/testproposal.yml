@@ -1,0 +1,9 @@
+chain: eos
+contract: testproposal
+tables:
+  - table: accounts
+    table_key: id
+  - table: proposals
+    table_key: id
+  - table: referendums
+    table_key: id
