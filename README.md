@@ -14,7 +14,5 @@ Temporary repository for EOSIO contract mappings
 ### Contract mappings
 
 ```sh
-yarn mappings eos testproposal
-yarn mappings eos testrefendum
-yarn manifest dboard
+yarn mappings eos testproposal && yarn mappings eos testrefendum && yarn manifest dboard
 ```

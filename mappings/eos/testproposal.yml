@@ -4,6 +4,6 @@ tables:
   - table: accounts
     table_key: id
   - table: proposals
-    table_key: id
+    computed_key_type: proposal_creator_id
   - table: referendums
     table_key: id
