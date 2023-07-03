@@ -1,6 +1,8 @@
 chain: eos
 contract: testproposal
 tables:
+  - table: phasesconf
+    table_key: type
   - table: accounts
     table_key: id
   - table: proposals
