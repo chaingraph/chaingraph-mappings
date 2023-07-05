@@ -1,0 +1,7 @@
+chain: eos
+contract: eospropvotes
+tables:
+  - table: referendums
+    table_key: referendum_id
+  - table: votes
+    table_key: voter
