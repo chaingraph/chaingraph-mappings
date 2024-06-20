@@ -14,5 +14,10 @@ Temporary repository for EOSIO contract mappings
 ### Contract mappings
 
 ```sh
+# dBoard test
 yarn mappings eos testproposal && yarn mappings eos testrefendum && yarn manifest dboard
+
+# bitcash test
+yarn mappings eos bkbtokentest && yarn mappings eos bkbmocktoken && yarn mappings eos bkbbanktest3 && yarn mappings eos delphioracle && yarn mappings eos bkbaccountst
+yarn manifest bitcash_test
 ```
