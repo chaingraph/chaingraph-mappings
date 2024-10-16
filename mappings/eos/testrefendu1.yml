@@ -1,5 +1,5 @@
 chain: eos
-contract: testrefendum
+contract: testrefendu1
 tables:
   - table: referendums
     table_key: referendum_id

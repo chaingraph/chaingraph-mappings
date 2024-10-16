@@ -5,14 +5,14 @@ url: 'https://eos.dboard.ai'
 whitelist:
   - chain: eos
     contract: eosmakeprops
-    start_block: 219468569
+    start_block: 399571106
     actions:
       - '*'
     tables:
       - '*'
   - chain: eos
     contract: eospropvotes
-    start_block: 219468569
+    start_block: 399571106
     actions:
       - '*'
     tables:
